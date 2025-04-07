@@ -1,0 +1,31 @@
+#solar-system {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.planet {
+    position: absolute;
+    border-radius: 50%;
+    transition: transform 0.1s linear;
+}
+
+.orbit {
+    position: absolute;
+    border: 1px dashed gray;
+    border-radius: 50%;
+    width: calc(2 * distance);
+    height: calc(2 * distance);
+    left: calc(50% - distance);
+    top: calc(50% - distance);
+}
+
+#pause-play {
+    margin-top: 10px;
+}
+
+#speed-control {
+    width: 200px;
+    margin-top: 10px;
+}
